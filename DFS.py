@@ -40,7 +40,7 @@ class Grafica:
             for nodo in self.vertices[r].vecinos:
                 if self.vertices[nodo].visitado == False:
                     self.vertices[nodo].padre = r
-                    self.recorrido.append(str(r)+""+str(nodo))
+                    self.recorrido.append(str(r)+"-"+str(nodo))
                     self.dfs(nodo,v)
                   
 
